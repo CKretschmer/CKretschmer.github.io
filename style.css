@@ -1,0 +1,43 @@
+body{
+
+background-color: black;
+margin: 0 auto 0 auto;
+height: 1000px;
+width: 1000px;
+text-align: center;
+
+}
+
+h1{
+  font-size: 75px;
+  font-style: inherit;
+  text-align: center;
+  color: red;
+  text-shadow: 1px 1px 1px #fff;
+
+}
+
+#container{
+  width: 1000px;
+  height: 1000px;
+  margin: 0 auto 0 auto;
+  background-color: black;
+  text-align: center;
+
+
+}
+
+.boxes{
+  width: 175px;
+  height: 175px;
+  background-color: white;
+  border-radius: 10px;
+  border: .05px solid black;
+  display: inline-block;
+  border-width: 5px;
+  margin: 0 auto 0 auto;
+}
+
+
+
+
