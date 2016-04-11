@@ -1,6 +1,6 @@
 body{
 
-background-color: black;
+background: url(the-office1.jpg);
 margin: 0 auto 0 auto;
 height: 1000px;
 width: 1000px;
@@ -9,7 +9,7 @@ text-align: center;
 }
 
 h1{
-  font-size: 75px;
+  font-size: 85px;
   font-style: inherit;
   text-align: center;
   color: red;
@@ -24,18 +24,30 @@ h1{
   background-color: black;
   text-align: center;
 
-
 }
 
 .boxes{
-  width: 175px;
-  height: 175px;
+  width: 170px;
+  height: 170px;
   background-color: white;
   border-radius: 10px;
   border: .05px solid black;
   display: inline-block;
-  border-width: 5px;
+  border-width: 3px;
   margin: 0 auto 0 auto;
+}
+
+.boxes.X{
+background-repeat: no-repeat;
+background: url(dwight2.png);
+
+
+}
+
+.boxes.O{
+background-repeat: no-repeat;
+background: url(Jim3.png);
+
 }
 
 

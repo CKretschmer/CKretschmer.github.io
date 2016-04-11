@@ -1,43 +1,115 @@
 "use strict";
-
-(function(){
 $(document).ready(function(){
 
-
-    var myArray = [
+  var myArray = [
 [null, null, null],
 [null, null, null],
 [null, null, null],
 ]
 
-});
+var clickNumber = 0;
 
-var topleft = 0;
-$('#tl').click(function(){    // I know that I want the click function
-  console.log('click')        // but I'm not sure how it's supposed to apply.
-  if (topleft === 0){
-    $(this).css("");    //I don't know what goes in the quotes
-    topleft++;
-  } else if () {
-    $(this).css("");    //I don't know what goes in the quotes
-    topleft = 0;
-  }
-});
+$(".boxes").click(function(){
+  if($(this).hasClass("X")){
+      alert("This box is already taken!")
 
-var topmiddle = 0;
-$('#tm').click(function(){
-  console.log('click')
-  if (topmiddle === 0){
-    $(this).css("");
-    topmiddle++;
-  }  else if () {
+      } else if($(this).hasClass("O")) {
+      alert("This box is already taken!")
 
+      } else {
+       clickNumber += 1;
+      if(clickNumber % 2 === 1){
+        $(this).addClass("X")
+        console.log(this)
+
+      } else {
+        $(this).addClass("O");
+        console.log(this)
+      }
 
   }
-  }
+
+// function checkForWinner(container, picture){
+//     if(container.find('.tl')hasClass('')
+//       &&
+//       container.find('.tm')hasClass('')
+//       &&
+//       container.find('.tr')hasClass('')
+
+//     var win = 1
+
+//     else if(container.find('.ml')hasClass('')
+//       (container.find('.ml')hasClass('')
+//       &&
+//       container.find('.m')hasClass('')
+//       &&
+//       container.find('.mr')hasClass('')
+
+//     var win = 1
+
+//      else if(container.find('.ml')hasClass('')
+//       (container.find('.bl')hasClass('')
+//       &&
+//       container.find('.bm')hasClass('')
+//       &&
+//       container.find('.br')hasClass('')
+
+//     var win = 1
+
+//      else if(container.find('.ml')hasClass('')
+//      (container.find('.tl')hasClass('')
+//       &&
+//       container.find('.ml')hasClass('')
+//       &&
+//       container.find('.bl')hasClass('')
+
+//      var win = 1
+
+//      else if(container.find('.ml')hasClass('')
+//      (container.find('.tm')hasClass('')
+//      &&
+//      container.find('.m')hasClass('')
+//      &&
+//      container.find('.bm')hasClass('')
+
+//      var win = 1
+
+//      else if(container.find('.ml')hasClass('')
+//      (container.find('.tr')hasClass('')
+//      &&
+//      container.find('.mr')hasClass('')
+//      &&
+//      container.find('.br')hasClass('')
+
+//      var win = 1
+
+//      else if(container.find('.ml')hasClass('')
+//      (container.find('.tl')hasClass('')
+//      &&
+//      container.find('.m')hasClass('')
+//      &&
+//      container.find('.br')hasClass('')
+
+//      var win = 1
+
+//      else if(container.find('.ml')hasClass('')
+//      (container.find('.tr')hasClass('')
+//      &&
+//      container.find('.m')hasClass('')
+//      &&
+//      container.find('.bl')hasClass('')
+
+//      var win = 1
 
 
+// }
 
+    document.getElementById("reset").onclick = function(){
+      document.getElementById("").value = "";
+    }
+
+
+  });
 
 
 
@@ -47,6 +119,3 @@ $('#tm').click(function(){
 });
 
 
-
-
-};
