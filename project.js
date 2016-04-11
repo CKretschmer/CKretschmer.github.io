@@ -112,6 +112,9 @@ $(".boxes").click(function(){
   });
 
 
+    $("#mybutton").click(function(){
+      console.log('pressed reset')
+    })
 
 
 
